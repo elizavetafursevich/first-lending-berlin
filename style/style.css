@@ -721,7 +721,7 @@ input{
 }
 .footer-block{
     width: 100%;
-    height: 413px;
+
     background: linear-gradient(315.06deg, #152649 5%, #4F525C 100%);
     display: flex;
     flex-direction: column;
