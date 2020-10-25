@@ -5,16 +5,25 @@ body{
 }
 .header-block {
     background-image: linear-gradient(rgba(79, 82, 92, 0.7), rgba(79, 82, 92, 0.7)), url("../images/room-5LRUg3IwNpI-unsplash.png");
-    background-size: 100% 1044px;
+    background-size: 100% 100vh;
     background-repeat: no-repeat;
     background-position: bottom;
     width: 100%;
-    height: 535px;
+    height: 100vh;
 }
 .header{
     padding: 2% 15%;
     display: flex;
     justify-content: space-between;
+}
+.logo{
+    z-index: 4;
+    position: fixed;
+}
+.menu{
+    position: fixed;
+    right: 5%;
+    z-index: 4;
 }
 .menu a{
     font-family: Inter;
@@ -29,7 +38,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 0% 30% 0% 30%;
+    padding: 15% 30% 0% 30%;
 }
 .name-of-block {
     margin: 0%;
@@ -66,7 +75,10 @@ body{
     color: #0F3D33;
     background-color: #50E3C2;
     padding: 2% 6%;
-
+}
+.button:hover{
+    background-color: #0F3D33;
+    color: #50E3C2;
 }
 .add-info {
     margin: 0%;
@@ -253,6 +265,10 @@ h2{
     color: #0F3D33;
     background: rgba(80, 227, 194, 0.14);
 }
+.button2:hover{
+    background-color: #0F3D33;
+    color: rgba(80, 227, 194, 0.8);
+}
 .content2-block{
     display: flex;
     flex-direction: row-reverse;
@@ -265,6 +281,7 @@ h2{
 .content2-block > .content1{
     margin: 0% 5% 0% 0%;
 }
+
 .content2-block > .images{
     padding: 0%;
 }
@@ -292,31 +309,56 @@ h2{
     background: linear-gradient(180deg, rgba(248, 251, 254, 0.1) -26.82%, white 100%);
 }
 
-.video{
+
+.video-block{
     width: 100%;
     height: 526px;
+    position:relative;
+
 }
-.video-info{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+.video-block video{
+    width: 100%;
+    height: 526px;
+    position: relative;
+    z-index: 0;
+}
+.video-block video:hover{
+    z-index: 3;
+}
+.video-block-overlay{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    margin: 7% 25%;
     z-index: 2;
 }
-.video-info > h2{
-    margin: 0%;
-    font-family: Inter;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 38px;
-    line-height: 50px;
-    text-align: center;
-    letter-spacing: -0.3px;
-    color: #FFFFFF;
+.shadow{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 1;
+    background: linear-gradient( #222D3D, #222D3D);
+    width: 100%;
+    height: 526px;
+    opacity: 0.5;
+    pointer-events: none;
+
+
 }
-.video-info > .text{
-    padding: 0 30% 0;
+.video-block-overlay> h2{
+     margin: 0%;
+     font-family: Inter;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 38px;
+     line-height: 50px;
+     text-align: center;
+     letter-spacing: -0.3px;
+     color: #FFFFFF;
+
+ }
+.video-block-overlay> .text{
+    padding: 0 20% 0;
     font-family: Inter;
     font-style: normal;
     font-weight: normal;
@@ -325,47 +367,6 @@ h2{
     text-align: center;
     color: #FFFFFF;
 }
-
-video{
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 526px;
-}
-/* .shadow{
-    background: linear-gradient( #222D3D, #222D3D);
-    position: relative;
-    width: 100%;
-    height: 526px;
-    z-index: 0;
-    opacity: 0.3;
-}
-*/
-.vid-icon{
-    top: 20%;
-    left: 0%;
-}
-
-.play{
-    position: relative;
-    top: -50%;
-    left: 44%;
-    width: 0;
-    height: 0;
-    border-top: 15px solid transparent;
-    border-left: 20px solid #50E3C2;;
-    border-bottom: 15px solid transparent;
-}
-.white-oval {
-    background: #FFFFFF;
-    mix-blend-mode: normal;
-    opacity: 0.19;
-    height: 96px;
-    width: 96px;
-    border-radius: 50%;
-    position: relative;
-}
-
 
 .content3-block{
     display: flex;
@@ -539,14 +540,6 @@ li>s{
     text-align: center;
     color: #878B90;
 }
-
-
-
-
-
-
-
-
 
 .reviews__list{
     display: flex;
