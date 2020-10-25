@@ -14,14 +14,10 @@
         padding: 2% 15%;
     }
     .header-info{
-        padding: 15% 25% 0% 25%;;
+        padding: 15% 25% 0% 25%;
     }
-    .logo{
-
-    }
-
 }
-@media (max-width: 1300px) {
+@media (max-width: 1000px) {
     .menu{
         display: flex;
         flex-direction: column;
