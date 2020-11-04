@@ -10,14 +10,20 @@ window.addEventListener('scroll', function (e) {
 });
 
 document.getElementById("vid").addEventListener("click", function(e){
+
     if (document.getElementsByTagName('video')[0].paused) {  // если видео остановлено, запускаем
+        document.getElementById('video-block').classList.add('video-block-active');
         document.getElementsByTagName('video')[0].play();
     } else {
         document.getElementsByTagName('video')[0].pause();
     }
-});
+}, false);
 
-const planButtums= document.querySelectorAll(".toggle-button");
+
+
+
+
+const planButtums = document.querySelectorAll(".toggle-button");
 for (let i=0; i<planButtums.length;i++){
 
     planButtums[i].addEventListener("click",function (e){
