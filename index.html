@@ -100,9 +100,9 @@
             <video poster="images/room-5LRUg3IwNpI-unsplash2.png" controls="controls">
                 <source src="video/movie.mp4" type="video/mp4">
             </video>
-            <div class="video-block-overlay">
+            <div class="video-block-overlay" onclick="fun1()">
                 <a class="play-button">
-                    <div class="play_butt" id="vid">
+                    <div class="play_butt" id="vid" onclick="document.getElementsByTagName('video')[0].play()" >
                         <div class="play"></div>
                     </div>
                 </a>

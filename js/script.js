@@ -9,6 +9,13 @@ window.addEventListener('scroll', function (e) {
     }
 });
 
+function fun1(){
+    let pl = document.getElementById('video-block');
+    pl.classList.remove('video-block');
+    pl.classList.add('video-block-active');
+}
+
+
 document.getElementById("vid").addEventListener("click", function(e){
 
     if (document.getElementsByTagName('video')[0].paused) {  // если видео остановлено, запускаем
@@ -18,8 +25,6 @@ document.getElementById("vid").addEventListener("click", function(e){
         document.getElementsByTagName('video')[0].pause();
     }
 }, false);
-
-
 
 
 
@@ -41,4 +46,3 @@ for (let i=0; i<planButtums.length;i++){
     });
 
 }
-
