@@ -384,7 +384,6 @@ h2{
     width: 100%;
     height: 526px;
     opacity: 0.5;
-    pointer-events: none;
 
 
 }
@@ -434,23 +433,8 @@ h2{
     box-sizing: border-box;
     border-radius: 50px;
 }
-.monthly{
-    border-radius: 50px;
-    padding: 6% 35%;
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 28px;
-    letter-spacing: -0.3px;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #0F3D33;
 
-}
-.yearly{
-    background:  #50E3C2;
+.data-target{
     border-radius: 50px;
     padding: 6% 35%;
     font-family: Inter;
@@ -463,6 +447,9 @@ h2{
     text-decoration: none;
     text-align: center;
     color: #0F3D33;
+}
+#toggle-active{
+    background-color: #50E3C2;
 }
 
 .price-card-block{

@@ -5,9 +5,7 @@
         <title>Berlin</title>
         <link rel="stylesheet" type="text/css" href="style/style.css">
         <link  rel="stylesheet" type="text/css" href="media/media.css">
-        <script src="js/script.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
         <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
         <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
@@ -96,13 +94,13 @@
                 <a href="#" class="button2">Start free 14 days trial</a>
             </div>
         </div>
-        <div class="video-block">
+        <div class="video-block ">
             <video poster="images/room-5LRUg3IwNpI-unsplash2.png" controls="controls">
                 <source src="video/movie.mp4" type="video/mp4">
             </video>
-            <div class="video-block-overlay" onclick="fun1()">
+            <div class="video-block-overlay">
                 <a class="play-button">
-                    <div class="play_butt" id="vid" onclick="document.getElementsByTagName('video')[0].play()" >
+                    <div class="play_butt" id="vid"  >
                         <div class="play"></div>
                     </div>
                 </a>
@@ -116,8 +114,8 @@
             <h2>Choose a plan to start</h2>
             <p class="text">Wireframes are generally created by business analysts, user experience designers, developers, visual designers, and by those with expertise</p>
             <div class="switch">
-                <a href="#" class="monthly">Monthly</a>
-                <a href="#" class="yearly">Yearly</a>
+                <div class="data-target" id="toggle-active">Monthly</div>
+                <div class="data-target">Yearly</div>
             </div>
         </div>
         <div class="price-block">
@@ -255,6 +253,9 @@
                     <a href="#" class="features">Features</a>
                 </div>
             </div>
+            <div class="curency-usd"></div>
+            <div class="curency-eur"></div>
+            <div class="curency-rub"></div>
             <div class="footer">
                 <div class="copyright">© 2019 Grayic. All rights reserved</div>
                 <div class="links">
@@ -269,6 +270,6 @@
                 </div>
             </div>
         </div>
-
+        <script src="js/script.js"></script>
     </body>
 </html>
