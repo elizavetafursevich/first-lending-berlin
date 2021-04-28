@@ -275,7 +275,9 @@
         </div>
     </div>
 </div>
-
+<script src="js/script.js"></script>
+</body>
+</html>
 
 <?php
 
@@ -327,6 +329,19 @@ if (!empty($accessToken)) {
 }
 ?>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .insta_post {
+            max-width: 300px;
+        }
+    </style>
+</head>
+<body>
+
 <?php foreach($instaFeed as $key => $post): ?>
 
     <?php if ($post['media_type'] === 'VIDEO'): ?>
@@ -341,7 +356,7 @@ if (!empty($accessToken)) {
 
 <?php endforeach; ?>
 
-    <p>Hello</p>
-<script src="js/script.js"></script>
 </body>
 </html>
+
+
